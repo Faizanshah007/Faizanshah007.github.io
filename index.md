@@ -1,8 +1,8 @@
 ## Portfolio
 
-- ### [Advanced-Programming-for-Games](https://github.com/Faizanshah007/Advanced-Programming-for-Games)
-- ### [Advanced-Graphics-for-Games](https://github.com/Faizanshah007/Advanced-Graphics-for-Games)
-- ### [Advanced-Game-Technologies](https://github.com/Faizanshah007/Advanced-Game-Technologies)
+- ### [Collatz Password Manager](https://github.com/Faizanshah007/Advanced-Programming-for-Games)
+- ### [Tropical Island](https://github.com/Faizanshah007/Advanced-Graphics-for-Games)
+- ### [Game Engine C++ (Physics)](https://github.com/Faizanshah007/Advanced-Game-Technologies)
 - ### [Fight_My_Demon](https://github.com/Faizanshah007/Fight_My_Demon)
 - ### [Maryo](https://github.com/Faizanshah007/Maryo)
 - ### [MindCanvas](https://github.com/Faizanshah007/MindCanvas)
