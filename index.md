@@ -1,8 +1,10 @@
 ## Portfolio
-
-| [Github](https://github.com/Faizanshah007) | [LinkedIn](https://www.linkedin.com/in/faizanshah-ansari-gamedev/) |
-| :----------------------------------------: | :----------------------------------------------------------------: |
-
+<table align="right">
+  <tr>
+    <td><a href="https://github.com/Faizanshah007">Github</a></td>
+    <td><a href="https://www.linkedin.com/in/faizanshah-ansari-gamedev/">LinkedIn</a></td>
+  </tr>
+</table>
 <table>
   <tr>
     <td><h3>
