@@ -40,20 +40,33 @@
 </table>
   </div>
 
-```markdown
-Syntax highlighted code block
+```
+#include "oopknowledge.h"
 
-# Header 1
-## Header 2
-### Header 3
+using namespace logicalseperation;
 
-- Bulleted
-- List
+const bool KEEP_MIND_REFRESHED = true;
 
-1. Numbered
-2. List
+OOPKnowledge::OOPKnowledge() {
+	UnderstandSystem = true;
+	HaveFunMakingGames = true;
+	DiscussUrSystemWithFellowProgrammers = "Always";
+	TranslateChainOfThoughtsIntoClasses();
+}
 
-**Bold** and _Italic_ and `Code` text
+void OOPKnowledge::DoesOnlyWhatNameSuggests() {
+	ProblemBrokenDownIntoSmallerParts = true;
+}
 
-[Link](url) and ![Image](src)
+// Believe me its a friendly function
+int GatherInfo(OOPKnowledge* oop) {
+	return oop->Fix;
+}
+
+// I love debugging :)
+int OOPKnowledge::RecursivelyDebug(const int& GatheredInfo) {
+	if (GatheredInfo == FinalFix) return GatheredInfo;
+	int newInfo = GatherInfo(this);
+	return RecursivelyDebug(GatheredInfo + newInfo);
+}
 ```
