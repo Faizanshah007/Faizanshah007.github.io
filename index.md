@@ -1,7 +1,7 @@
 ## Portfolio
 <div><table>
   <tr>
-    <td align="right"><a href="https://github.com/Faizanshah007">Github</a> <a href="https://www.linkedin.com/in/faizanshah-ansari-gamedev/">LinkedIn</a></td>
+    <td align="left"><a href="https://github.com/Faizanshah007">Github</a> <a href="https://www.linkedin.com/in/faizanshah-ansari-gamedev/">LinkedIn</a></td>
   </tr>
 </table>
   </div>
