@@ -3,8 +3,9 @@
 <div align = "right">
             <a href="https://github.com/Faizanshah007">GitHub</a>
             <a href="https://www.linkedin.com/in/faizanshah-ansari-gamedev/">LinkedIn</a>
-        </div>
-        <br>
+</div>
+<br>
+<div>
 <table>
   <tr>
     <td><h3>
@@ -37,7 +38,7 @@
       </h3></td>
   </tr>
 </table>
-
+</div>
 ```markdown
 Syntax highlighted code block
 
