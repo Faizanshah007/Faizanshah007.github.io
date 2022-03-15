@@ -1,6 +1,6 @@
 ## Portfolio
 
-<div align = "right">
+<div dir = "rtl">
             <a href="https://github.com/Faizanshah007">GitHub</a>
             <a href="https://www.linkedin.com/in/faizanshah-ansari-gamedev/">LinkedIn</a>
 </div>
