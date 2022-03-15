@@ -1,10 +1,12 @@
 ## Portfolio
-<table align="right">
+<div><table align="right">
   <tr>
     <td><a href="https://github.com/Faizanshah007">Github</a></td>
     <td><a href="https://www.linkedin.com/in/faizanshah-ansari-gamedev/">LinkedIn</a></td>
   </tr>
 </table>
+  </div>
+  <div>
 <table>
   <tr>
     <td><h3>
@@ -37,6 +39,7 @@
       </h3></td>
   </tr>
 </table>
+  </div>
 
 ```markdown
 Syntax highlighted code block
