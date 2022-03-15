@@ -1,9 +1,8 @@
 ## Portfolio
 
-[Github](https://github.com/Faizanshah007) | [LinkedIn](https://www.linkedin.com/in/faizanshah-ansari-gamedev/)
-| :---: | :---:
+| [Github](https://github.com/Faizanshah007) | [LinkedIn](https://www.linkedin.com/in/faizanshah-ansari-gamedev/) |
+| :----------------------------------------: | :----------------------------------------------------------------: |
 
-<div>
 <table>
   <tr>
     <td><h3>
@@ -36,7 +35,7 @@
       </h3></td>
   </tr>
 </table>
-</div>
+
 ```markdown
 Syntax highlighted code block
 
