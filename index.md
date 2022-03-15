@@ -43,30 +43,27 @@
 ```
 #include "oopknowledge.h"
 
-using namespace logicalseperation;
-
 const bool KEEP_MIND_REFRESHED = true;
 
-OOPKnowledge::OOPKnowledge() {
-	UnderstandSystem = true;
-	HaveFunMakingGames = true;
-	DiscussUrSystemWithFellowProgrammers = "Always";
+// Having logical namespaces help in compartmentalization of systems
+
+NS::OOPKnowledge::OOPKnowledge() : UnderstandSystem(true), HaveFunMakingGames(true), DiscussUrSystemWithFellowProgrammers("Always") {
 	TranslateChainOfThoughtsIntoClasses();
 }
 
-void OOPKnowledge::DoesOnlyWhatNameSuggests() {
+void NS::OOPKnowledge::DoesOnlyWhatNameSuggests() {
 	ProblemBrokenDownIntoSmallerParts = true;
 }
 
 // Believe me its a friendly function
-int GatherInfo(OOPKnowledge* oop) {
+int GatherInfo(NS::OOPKnowledge* oop) {
 	return oop->Fix;
 }
 
 // I love debugging :)
-int OOPKnowledge::RecursivelyDebug(const int& GatheredInfo) {
+int NS::OOPKnowledge::RecursivelyDebug(const int& GatheredInfo) {
 	if (GatheredInfo == FinalFix) return GatheredInfo;
 	int newInfo = GatherInfo(this);
-	return RecursivelyDebug(GatheredInfo + newInfo);
+	return NS::OOPKnowledge::RecursivelyDebug(GatheredInfo + newInfo);
 }
 ```
