@@ -11,7 +11,7 @@
   <tr>
     <td><h3>
         <li><a href="https://github.com/Faizanshah007/Spitoon-TeamProject">Spitoon - Team Project</a></li>
-        <br><iframe width="560" height="315" src="https://www.youtube.com/embed/gx8T80bnTCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br><iframe width="560" height="315" src="https://www.youtube.com/embed/gx8T80bnTCk?&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </h3></td>
     <td><h3>
         <li><a href="https://github.com/Faizanshah007/Advanced-Programming-for-Games">Collatz Password Manager</a></li>
