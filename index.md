@@ -23,6 +23,8 @@ Gameplay programmer focused on building reusable systems, improving developer wo
         <p><code>Unreal Engine 5</code> <code>C++</code> <code>Blueprints</code></p>
         <p>Gameplay systems, editor tooling and targeted engine improvements.</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/OcED8x2LsXE?si=VSKeAejo9BflwyDF&mute=1" title="Exodus video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_c80LMt_Uxs?si=I7aiEYL2_mvS5Kx5&mute=1" title="Exodus additional video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </h3></td>
       <td valign="top"><h3>
         <li><a href="https://www.futurlab.co.uk/games/powerwash-simulator-2">PowerWash Simulator 2</a></li>
