@@ -11,7 +11,7 @@
   </table>
 </div>
 
-Gameplay programmer focused on building reusable systems, improving developer workflows and tracking down the bugs hiding between them.
+Game programmer focused on designing extensible systems that integrate well with the wider codebase, improving developer workflows and tracking down the bugs that emerge between systems.
 
 ## Professional Projects
 
