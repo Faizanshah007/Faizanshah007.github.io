@@ -1,14 +1,9 @@
 ## Portfolio
 
-<div>
-  <table>
-    <tr>
-      <td align="left">
-        <a href="https://github.com/Faizanshah007">GitHub</a> |
-        <a href="https://www.linkedin.com/in/faizanshah-ansari-gamedev/">LinkedIn</a>
-      </td>
-    </tr>
-  </table>
+<div class="portfolio-links">
+  <a href="https://github.com/Faizanshah007">GitHub</a>
+  <span aria-hidden="true">|</span>
+  <a href="https://www.linkedin.com/in/faizanshah-ansari-gamedev/">LinkedIn</a>
 </div>
 
 Game programmer focused on designing extensible systems that integrate well with the wider codebase, improving developer workflows and tracking down the bugs that emerge between systems.
@@ -70,31 +65,46 @@ Game programmer focused on designing extensible systems that integrate well with
 </div>
 
 <style>
-  .project-tabs {
+  .portfolio-links {
     display: flex;
-    gap: 0.25rem;
-    margin: 1.5rem 0 1rem;
-    border-bottom: 1px solid #d0d7de;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    text-align: left;
+  }
+
+  .project-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    width: 100%;
+    margin: 1.75rem 0 1.5rem;
   }
 
   .project-tab {
     appearance: none;
-    background: transparent;
-    border: 0;
-    border-bottom: 2px solid transparent;
-    padding: 0.65rem 1rem;
+    width: 100%;
+    background: rgba(127, 127, 127, 0.08);
+    border: 1px solid #8c959f;
+    border-radius: 6px;
+    padding: 0.8rem 1.5rem;
     color: inherit;
     font: inherit;
     font-weight: 600;
+    text-align: center;
     cursor: pointer;
+    transition: border-color 120ms ease, background-color 120ms ease, color 120ms ease;
   }
 
   .project-tab:hover {
-    border-bottom-color: #8c959f;
+    border-color: #0969da;
+    background: rgba(9, 105, 218, 0.08);
   }
 
   .project-tab.active {
-    border-bottom-color: #0969da;
+    border-color: #0969da;
+    background: rgba(9, 105, 218, 0.14);
     color: #0969da;
   }
 
@@ -106,6 +116,7 @@ Game programmer focused on designing extensible systems that integrate well with
   .project-panel[hidden] {
     display: none;
   }
+
 </style>
 
 <script>
