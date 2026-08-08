@@ -8,11 +8,15 @@
 
 Game programmer focused on designing extensible systems that integrate well with the wider codebase, improving developer workflows and tracking down the bugs that emerge between systems.
 
-<div class="project-tabs" role="tablist" aria-label="Project categories">
-  <button type="button" class="project-tab active" role="tab" aria-selected="true" aria-controls="professional-projects" data-project-tab="professional-projects">Professional Projects</button>
-  <button type="button" class="project-tab" role="tab" aria-selected="false" aria-controls="university-projects" data-project-tab="university-projects">University Projects</button>
-</div>
+<div class="projects-container">
+  <div class="project-tabs-container">
+    <div class="project-tabs" role="tablist" aria-label="Project categories">
+      <button type="button" class="project-tab active" role="tab" aria-selected="true" aria-controls="professional-projects" data-project-tab="professional-projects">Professional Projects</button>
+      <button type="button" class="project-tab" role="tab" aria-selected="false" aria-controls="university-projects" data-project-tab="university-projects">University Projects</button>
+    </div>
+  </div>
 
+  <div class="project-content">
 <div id="professional-projects" class="project-panel" role="tabpanel">
 <div>
   <table>
@@ -62,6 +66,8 @@ Game programmer focused on designing extensible systems that integrate well with
     </tr>
   </table>
 </div>
+  </div>
+</div>
 </div>
 
 <style>
@@ -74,21 +80,43 @@ Game programmer focused on designing extensible systems that integrate well with
     text-align: left;
   }
 
+  .projects-container {
+    width: 100%;
+    margin: 1.75rem 0 0;
+    border: 1px solid #8c959f;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: rgba(127, 127, 127, 0.02);
+  }
+
+  .project-tabs-container {
+    width: 100%;
+    padding: 0.75rem;
+    border-bottom: 1px solid #8c959f;
+    box-sizing: border-box;
+    background: rgba(127, 127, 127, 0.04);
+  }
+
   .project-tabs {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 0.75rem;
     width: 100%;
-    margin: 1.75rem 0 1.5rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   .project-tab {
     appearance: none;
     width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     background: rgba(127, 127, 127, 0.08);
     border: 1px solid #8c959f;
     border-radius: 6px;
-    padding: 0.8rem 1.5rem;
+    padding: 0.9rem 1.5rem;
     color: inherit;
     font: inherit;
     font-weight: 600;
@@ -113,10 +141,28 @@ Game programmer focused on designing extensible systems that integrate well with
     outline-offset: 2px;
   }
 
+  .project-content {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .project-panel,
+  .project-panel > div,
+  .project-panel table {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .project-panel table {
+    margin: 0;
+  }
+
   .project-panel[hidden] {
     display: none;
   }
-
 </style>
 
 <script>
