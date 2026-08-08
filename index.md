@@ -13,8 +13,12 @@
 
 Game programmer focused on designing extensible systems that integrate well with the wider codebase, improving developer workflows and tracking down the bugs that emerge between systems.
 
-## Professional Projects
+<div class="project-tabs" role="tablist" aria-label="Project categories">
+  <button type="button" class="project-tab active" role="tab" aria-selected="true" aria-controls="professional-projects" data-project-tab="professional-projects">Professional Projects</button>
+  <button type="button" class="project-tab" role="tab" aria-selected="false" aria-controls="university-projects" data-project-tab="university-projects">University Projects</button>
+</div>
 
+<div id="professional-projects" class="project-panel" role="tabpanel">
 <div>
   <table>
     <tr>
@@ -37,9 +41,9 @@ Game programmer focused on designing extensible systems that integrate well with
     </tr>
   </table>
 </div>
+</div>
 
-## University Projects
-
+<div id="university-projects" class="project-panel" role="tabpanel" hidden>
 <div>
   <table>
     <tr>
@@ -63,3 +67,61 @@ Game programmer focused on designing extensible systems that integrate well with
     </tr>
   </table>
 </div>
+</div>
+
+<style>
+  .project-tabs {
+    display: flex;
+    gap: 0.25rem;
+    margin: 1.5rem 0 1rem;
+    border-bottom: 1px solid #d0d7de;
+  }
+
+  .project-tab {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    padding: 0.65rem 1rem;
+    color: inherit;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .project-tab:hover {
+    border-bottom-color: #8c959f;
+  }
+
+  .project-tab.active {
+    border-bottom-color: #0969da;
+    color: #0969da;
+  }
+
+  .project-tab:focus-visible {
+    outline: 2px solid #0969da;
+    outline-offset: 2px;
+  }
+
+  .project-panel[hidden] {
+    display: none;
+  }
+</style>
+
+<script>
+  document.querySelectorAll('[data-project-tab]').forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const targetId = tab.dataset.projectTab;
+
+      document.querySelectorAll('[data-project-tab]').forEach((item) => {
+        const isActive = item === tab;
+        item.classList.toggle('active', isActive);
+        item.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+
+      document.querySelectorAll('.project-panel').forEach((panel) => {
+        panel.hidden = panel.id !== targetId;
+      });
+    });
+  });
+</script>
