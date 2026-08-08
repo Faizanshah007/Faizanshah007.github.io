@@ -90,55 +90,57 @@ Game programmer focused on designing extensible systems that integrate well with
     background: rgba(127, 127, 127, 0.02);
   }
 
+  /* One natural tab bar inside the outer project container. */
   .project-tabs-container {
     width: 100%;
-    padding: 0.75rem;
+    margin: 0;
+    padding: 0;
     border-bottom: 1px solid #8c959f;
     box-sizing: border-box;
-    background: rgba(127, 127, 127, 0.04);
   }
 
   .project-tabs {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 0.75rem;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
 
   .project-tab {
     appearance: none;
     width: 100%;
     min-width: 0;
-    box-sizing: border-box;
-    background: rgba(127, 127, 127, 0.08);
-    border: 1px solid #8c959f;
-    border-radius: 6px;
-    padding: 0.9rem 1.5rem;
+    margin: 0;
+    padding: 1rem 1.25rem;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
     color: inherit;
     font: inherit;
     font-weight: 600;
     text-align: center;
     cursor: pointer;
-    transition: border-color 120ms ease, background-color 120ms ease, color 120ms ease;
+    transition: background-color 120ms ease, color 120ms ease;
+  }
+
+  /* The only internal tab border: one divider between left and right. */
+  .project-tab + .project-tab {
+    border-left: 1px solid #8c959f;
   }
 
   .project-tab:hover {
-    border-color: #0969da;
-    background: rgba(9, 105, 218, 0.08);
+    background: rgba(127, 127, 127, 0.08);
   }
 
   .project-tab.active {
-    border-color: #0969da;
-    background: rgba(9, 105, 218, 0.14);
+    background: rgba(9, 105, 218, 0.12);
     color: #0969da;
   }
 
   .project-tab:focus-visible {
     outline: 2px solid #0969da;
-    outline-offset: 2px;
+    outline-offset: -2px;
   }
 
   .project-content {
@@ -146,22 +148,75 @@ Game programmer focused on designing extensible systems that integrate well with
     margin: 0;
     padding: 1rem;
     box-sizing: border-box;
-    overflow: hidden;
   }
 
   .project-panel,
   .project-panel > div,
   .project-panel table {
     width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
   }
 
   .project-panel table {
     margin: 0;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+
+  .project-panel td {
+    width: 50%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 0.5rem 0.75rem;
+    vertical-align: top;
+    overflow-wrap: anywhere;
+  }
+
+  .project-panel td:first-child {
+    padding-left: 0;
+  }
+
+  .project-panel td:last-child {
+    padding-right: 0;
+  }
+
+  .project-panel td[colspan="2"] {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Make every project video fill its column instead of staying at 560px. */
+  .project-panel iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    box-sizing: border-box;
   }
 
   .project-panel[hidden] {
     display: none;
+  }
+
+  @media (max-width: 760px) {
+    .project-content {
+      padding: 0.75rem;
+    }
+
+    .project-panel table,
+    .project-panel tbody,
+    .project-panel tr,
+    .project-panel td {
+      display: block;
+      width: 100%;
+    }
+
+    .project-panel td {
+      padding: 0.5rem 0 1rem;
+    }
   }
 </style>
 
