@@ -8,11 +8,15 @@
 
 Game programmer focused on designing extensible systems that integrate well with the wider codebase, improving developer workflows and tracking down the bugs that emerge between systems.
 
-<div class="project-tabs" role="tablist" aria-label="Project categories">
-  <button type="button" class="project-tab active" role="tab" aria-selected="true" aria-controls="professional-projects" data-project-tab="professional-projects">Professional Projects</button>
-  <button type="button" class="project-tab" role="tab" aria-selected="false" aria-controls="university-projects" data-project-tab="university-projects">University Projects</button>
-</div>
+<div class="projects-container">
+  <div class="project-tabs-container">
+    <div class="project-tabs" role="tablist" aria-label="Project categories">
+      <button type="button" class="project-tab active" role="tab" aria-selected="true" aria-controls="professional-projects" data-project-tab="professional-projects">Professional Projects</button>
+      <button type="button" class="project-tab" role="tab" aria-selected="false" aria-controls="university-projects" data-project-tab="university-projects">University Projects</button>
+    </div>
+  </div>
 
+  <div class="project-content">
 <div id="professional-projects" class="project-panel" role="tabpanel">
 <div>
   <table>
@@ -21,7 +25,9 @@ Game programmer focused on designing extensible systems that integrate well with
         <li><a href="https://www.exodusgame.com/en-US">Exodus</a></li>
         <p><code>Unreal Engine 5</code> <code>C++</code> <code>Blueprints</code></p>
         <p>Gameplay systems, editor tooling and targeted engine improvements.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/OcED8x2LsXE?si=VSKeAejo9BflwyDF&mute=1" title="Exodus video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <button class="video-thumbnail" type="button" data-video-id="OcED8x2LsXE" data-video-title="Exodus gameplay video" aria-label="Play Exodus gameplay video">
+          <img src="ExodusGameplayThumbnail.png" alt="Exodus Extended Gameplay Reveal thumbnail">
+        </button>
         <br><br>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/_c80LMt_Uxs?si=I7aiEYL2_mvS5Kx5&mute=1" title="Exodus additional video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </h3></td>
@@ -45,22 +51,30 @@ Game programmer focused on designing extensible systems that integrate well with
       <td colspan="2" align="center" valign="top"><h3>
         <li><a href="https://github.com/Faizanshah007/Spitoon-TeamProject">Spitoon - Team Project</a></li>
         <p><code>Custom Engine</code> <code>C++</code></p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/gx8T80bnTCk?mute=1" title="Spitoon team project video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button class="video-thumbnail" type="button" data-video-id="gx8T80bnTCk" data-video-title="Spitoon team project video" aria-label="Play Spitoon team project video">
+          <img src="TeamProjectThumbnail.png" alt="Spitoon team project gameplay thumbnail">
+        </button>
       </h3></td>
     </tr>
     <tr>
       <td valign="top"><h3>
         <li><a href="https://github.com/Faizanshah007/Advanced-Graphics-for-Games">Tropical Island</a></li>
         <p><code>Custom Engine</code> <code>C++</code></p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HFE6a5WwDNY?mute=1" title="Tropical Island video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button class="video-thumbnail" type="button" data-video-id="HFE6a5WwDNY" data-video-title="Tropical Island video" aria-label="Play Tropical Island video">
+          <img src="GraphicsThumbnail.png" alt="Tropical Island graphics project thumbnail">
+        </button>
       </h3></td>
       <td valign="top"><h3>
         <li><a href="https://github.com/Faizanshah007/Advanced-Game-Technologies">Game Engine (Physics)</a></li>
         <p><code>Custom Engine</code> <code>C++</code></p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/g7kDU1J3jcs?mute=1" title="Game Engine C++ physics video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button class="video-thumbnail" type="button" data-video-id="g7kDU1J3jcs" data-video-title="Game Engine C++ physics video" aria-label="Play Game Engine physics video">
+          <img src="PhysicsGameEngineThumbnail.png" alt="Game Engine physics project thumbnail">
+        </button>
       </h3></td>
     </tr>
   </table>
+</div>
+  </div>
 </div>
 </div>
 
@@ -74,41 +88,146 @@ Game programmer focused on designing extensible systems that integrate well with
     text-align: left;
   }
 
+  .projects-container {
+    width: 100%;
+    margin: 1.75rem 0 0;
+    border: 1px solid #8c959f;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: rgba(127, 127, 127, 0.02);
+  }
+
+  /* One natural tab bar inside the outer project container. */
+  .project-tabs-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #8c959f;
+    box-sizing: border-box;
+  }
+
   .project-tabs {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.75rem;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
-    margin: 1.75rem 0 1.5rem;
+    margin: 0;
+    padding: 0;
   }
 
   .project-tab {
     appearance: none;
     width: 100%;
-    background: rgba(127, 127, 127, 0.08);
-    border: 1px solid #8c959f;
-    border-radius: 6px;
-    padding: 0.8rem 1.5rem;
+    min-width: 0;
+    margin: 0;
+    padding: 1rem 1.25rem;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
     color: inherit;
     font: inherit;
     font-weight: 600;
     text-align: center;
     cursor: pointer;
-    transition: border-color 120ms ease, background-color 120ms ease, color 120ms ease;
+    transition: background-color 120ms ease, color 120ms ease;
+  }
+
+  /* The only internal tab border: one divider between left and right. */
+  .project-tab + .project-tab {
+    border-left: 1px solid #8c959f;
   }
 
   .project-tab:hover {
-    border-color: #0969da;
-    background: rgba(9, 105, 218, 0.08);
+    background: rgba(127, 127, 127, 0.08);
   }
 
   .project-tab.active {
-    border-color: #0969da;
-    background: rgba(9, 105, 218, 0.14);
+    background: rgba(9, 105, 218, 0.12);
     color: #0969da;
   }
 
   .project-tab:focus-visible {
+    outline: 2px solid #0969da;
+    outline-offset: -2px;
+  }
+
+  .project-content {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .project-panel,
+  .project-panel > div,
+  .project-panel table {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .project-panel table {
+    margin: 0;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+
+  .project-panel td {
+    width: 50%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 0.5rem 0.75rem;
+    vertical-align: top;
+    overflow-wrap: anywhere;
+  }
+
+  .project-panel td:first-child {
+    padding-left: 0;
+  }
+
+  .project-panel td:last-child {
+    padding-right: 0;
+  }
+
+  .project-panel td[colspan="2"] {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Make every project video fill its column instead of staying at 560px. */
+  .project-panel iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    box-sizing: border-box;
+  }
+
+  /* Custom video previews: sharp 16:9 images that become YouTube players on click. */
+  .video-thumbnail {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #000;
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .video-thumbnail img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .video-thumbnail:focus-visible {
     outline: 2px solid #0969da;
     outline-offset: 2px;
   }
@@ -117,9 +236,39 @@ Game programmer focused on designing extensible systems that integrate well with
     display: none;
   }
 
+  @media (max-width: 760px) {
+    .project-content {
+      padding: 0.75rem;
+    }
+
+    .project-panel table,
+    .project-panel tbody,
+    .project-panel tr,
+    .project-panel td {
+      display: block;
+      width: 100%;
+    }
+
+    .project-panel td {
+      padding: 0.5rem 0 1rem;
+    }
+  }
 </style>
 
 <script>
+  document.querySelectorAll('.video-thumbnail').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube.com/embed/${thumbnail.dataset.videoId}?autoplay=1&mute=1`;
+      iframe.title = thumbnail.dataset.videoTitle;
+      iframe.frameBorder = '0';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+      iframe.allowFullscreen = true;
+      thumbnail.replaceWith(iframe);
+    });
+  });
+
   document.querySelectorAll('[data-project-tab]').forEach((tab) => {
     tab.addEventListener('click', () => {
       const targetId = tab.dataset.projectTab;
