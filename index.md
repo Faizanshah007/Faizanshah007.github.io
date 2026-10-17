@@ -236,6 +236,10 @@ Game programmer focused on designing extensible systems that integrate well with
     display: none;
   }
 
+  .project-panel li { 
+      list-style-position: inside; 
+  }
+
   @media (max-width: 760px) {
     .project-content {
       padding: 0.75rem;
@@ -251,10 +255,6 @@ Game programmer focused on designing extensible systems that integrate well with
 
     .project-panel td {
       padding: 0.5rem 0 1rem;
-    }
-
-    .project-panel li { 
-      list-style-position: inside; 
     }
   }
 </style>
