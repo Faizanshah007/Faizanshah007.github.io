@@ -1,9 +1,9 @@
 ## Portfolio
 
 <div class="portfolio-links">
-  <a href="https://github.com/Faizanshah007">GitHub</a>
+  <a href="https://github.com/Faizanshah007" target="_blank" rel="noopener">GitHub</a>
   <span aria-hidden="true">|</span>
-  <a href="https://www.linkedin.com/in/faizanshah-ansari-gamedev/">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/faizanshah-ansari-gamedev/" target="_blank" rel="noopener">LinkedIn</a>
 </div>
 
 Game programmer focused on designing extensible systems that integrate well with the wider codebase, improving developer workflows and tracking down the bugs that emerge between systems.
@@ -22,7 +22,7 @@ Game programmer focused on designing extensible systems that integrate well with
   <table>
     <tr>
       <td valign="top"><h3>
-        <li><a href="https://www.exodusgame.com/en-US">Exodus</a></li>
+        <li><a href="https://www.exodusgame.com/en-US" target="_blank" rel="noopener">Exodus</a></li>
         <p><code>Unreal Engine 5</code> <code>C++</code> <code>Blueprints</code></p>
         <p>Gameplay systems, editor tooling and targeted engine improvements.</p>
         <button class="video-thumbnail" type="button" data-video-id="OcED8x2LsXE" data-video-title="Exodus gameplay video" aria-label="Play Exodus gameplay video">
@@ -32,7 +32,7 @@ Game programmer focused on designing extensible systems that integrate well with
         <iframe width="560" height="315" src="https://www.youtube.com/embed/_c80LMt_Uxs?si=I7aiEYL2_mvS5Kx5&mute=1" title="Exodus additional video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </h3></td>
       <td valign="top"><h3>
-        <li><a href="https://www.futurlab.co.uk/games/powerwash-simulator-2">PowerWash Simulator 2</a></li>
+        <li><a href="https://www.futurlab.co.uk/games/powerwash-simulator-2" target="_blank" rel="noopener">PowerWash Simulator 2</a></li>
         <p><code>Unity 6</code> <code>C#</code></p>
         <p>Game stability, release support, cross-platform multiplayer and split-screen work.</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/gP7i0rnNRkE?si=RGg_OystvMY10bKu&mute=1" title="PowerWash Simulator 2 video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -49,7 +49,7 @@ Game programmer focused on designing extensible systems that integrate well with
   <table>
     <tr>
       <td colspan="2" align="center" valign="top"><h3>
-        <li><a href="https://github.com/Faizanshah007/Spitoon-TeamProject/commits?author=Faizanshah007">Spitoon - Team Project</a></li>
+        <li><a href="https://github.com/Faizanshah007/Spitoon-TeamProject/commits?author=Faizanshah007" target="_blank" rel="noopener">Spitoon - Team Project</a></li>
         <p><code>Custom Engine</code> <code>C++</code></p>
         <p>Gameplay lead in a seven-person team building a paint shooter, owning player movement and input, projectiles, power-ups, match flow and level loading.</p>
         <button class="video-thumbnail" type="button" data-video-id="gx8T80bnTCk" data-video-title="Spitoon team project video" aria-label="Play Spitoon team project video">
@@ -59,7 +59,7 @@ Game programmer focused on designing extensible systems that integrate well with
     </tr>
     <tr>
       <td valign="top"><h3>
-        <li><a href="https://github.com/Faizanshah007/Advanced-Graphics-for-Games">Tropical Island</a></li>
+        <li><a href="https://github.com/Faizanshah007/Advanced-Graphics-for-Games" target="_blank" rel="noopener">Tropical Island</a></li>
         <p><code>Custom Engine</code> <code>C++</code></p>
         <p>OpenGL island scene with a scene graph, multi-light forward rendering, reflective water, geometry-shader particles and post-processing.</p>
         <button class="video-thumbnail" type="button" data-video-id="HFE6a5WwDNY" data-video-title="Tropical Island video" aria-label="Play Tropical Island video">
@@ -67,7 +67,7 @@ Game programmer focused on designing extensible systems that integrate well with
         </button>
       </h3></td>
       <td valign="top"><h3>
-        <li><a href="https://github.com/Faizanshah007/Advanced-Game-Technologies">Game Engine (Physics)</a></li>
+        <li><a href="https://github.com/Faizanshah007/Advanced-Game-Technologies" target="_blank" rel="noopener">Game Engine (Physics)</a></li>
         <p><code>Custom Engine</code> <code>C++</code></p>
         <p>Rolling-ball physics game with sphere, AABB, OBB and capsule collisions, positional constraints, state machines and grid pathfinding.</p>
         <button class="video-thumbnail" type="button" data-video-id="g7kDU1J3jcs" data-video-title="Game Engine C++ physics video" aria-label="Play Game Engine physics video">
