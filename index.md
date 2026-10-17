@@ -252,6 +252,10 @@ Game programmer focused on designing extensible systems that integrate well with
     .project-panel td {
       padding: 0.5rem 0 1rem;
     }
+
+    .project-panel li { 
+      list-style-position: inside; 
+    }
   }
 </style>
 
