@@ -49,8 +49,9 @@ Game programmer focused on designing extensible systems that integrate well with
   <table>
     <tr>
       <td colspan="2" align="center" valign="top"><h3>
-        <li><a href="https://github.com/Faizanshah007/Spitoon-TeamProject">Spitoon - Team Project</a></li>
+        <li><a href="https://github.com/Faizanshah007/Spitoon-TeamProject/commits?author=Faizanshah007">Spitoon - Team Project</a></li>
         <p><code>Custom Engine</code> <code>C++</code></p>
+        <p>Gameplay lead in a seven-person team building a paint shooter, owning player movement and input, projectiles, power-ups, match flow and level loading.</p>
         <button class="video-thumbnail" type="button" data-video-id="gx8T80bnTCk" data-video-title="Spitoon team project video" aria-label="Play Spitoon team project video">
           <img src="TeamProjectThumbnail.png" alt="Spitoon team project gameplay thumbnail">
         </button>
@@ -60,6 +61,7 @@ Game programmer focused on designing extensible systems that integrate well with
       <td valign="top"><h3>
         <li><a href="https://github.com/Faizanshah007/Advanced-Graphics-for-Games">Tropical Island</a></li>
         <p><code>Custom Engine</code> <code>C++</code></p>
+        <p>OpenGL island scene with a scene graph, multi-light forward rendering, reflective water, geometry-shader particles and post-processing.</p>
         <button class="video-thumbnail" type="button" data-video-id="HFE6a5WwDNY" data-video-title="Tropical Island video" aria-label="Play Tropical Island video">
           <img src="GraphicsThumbnail.png" alt="Tropical Island graphics project thumbnail">
         </button>
@@ -67,6 +69,7 @@ Game programmer focused on designing extensible systems that integrate well with
       <td valign="top"><h3>
         <li><a href="https://github.com/Faizanshah007/Advanced-Game-Technologies">Game Engine (Physics)</a></li>
         <p><code>Custom Engine</code> <code>C++</code></p>
+        <p>Rolling-ball physics game with sphere, AABB, OBB and capsule collisions, positional constraints, state machines and grid pathfinding.</p>
         <button class="video-thumbnail" type="button" data-video-id="g7kDU1J3jcs" data-video-title="Game Engine C++ physics video" aria-label="Play Game Engine physics video">
           <img src="PhysicsGameEngineThumbnail.png" alt="Game Engine physics project thumbnail">
         </button>
