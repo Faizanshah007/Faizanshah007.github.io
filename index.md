@@ -242,6 +242,8 @@ Game programmer focused on designing extensible systems that integrate well with
   .project-panel li { 
       list-style-position: inside; 
   }
+  
+  #downloads { display: none; }
 
   @media (max-width: 760px) {
     .project-content {
